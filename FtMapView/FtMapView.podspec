@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
   #   'FtMapView' => ['FtMapView/Assets/*.png']
   # }
 
-    s.public_header_files = 'Pod/Classes/**/*.h'
+    s.public_header_files = 'FtMapView/Classes/**/*.h'
     s.frameworks = 'UIKit', 'MapKit', 'CoreLocation'
   # s.dependency 'AFNetworking', '~> 2.3'
     s.dependency 'Masonry', '~> 1.0.1'
