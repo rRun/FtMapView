@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
     FtMapView,locator 定位和地图定位的图标，请参考demo
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/FtMapView'
+  s.homepage         = 'https://github.com/rRun/FtMapView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'hexy' => 'hexy@cdfortis.com' }
