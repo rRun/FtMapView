@@ -1,0 +1,19 @@
+PODS:
+  - FtMapView (0.1.0):
+    - Masonry (~> 1.0.1)
+  - Masonry (1.0.1)
+
+DEPENDENCIES:
+  - FtMapView (from `../`)
+
+EXTERNAL SOURCES:
+  FtMapView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FtMapView: 3b25aaff59929abf37cfbd4e6b3c467b52eae4bb
+  Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
+
+PODFILE CHECKSUM: d42716969f0e1dc8330eb59670153003ff9a7fed
+
+COCOAPODS: 1.0.1

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ft View Controller-->
+        <scene sceneID="wQg-tq-qST">
+            <objects>
+                <viewController id="whP-gf-Uak" customClass="FtViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="2qg-Gy-dbx" customClass="BaseMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xM7-us-HfU">
+                                <rect key="frame" x="20" y="562" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="fkI-YX-RnY"/>
+                                </constraints>
+                                <state key="normal" title="navigate"/>
+                                <connections>
+                                    <action selector="doNav:" destination="whP-gf-Uak" eventType="touchUpInside" id="EIq-Oi-T5V"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2qg-Gy-dbx" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" id="DTO-fg-R8L"/>
+                            <constraint firstAttribute="trailing" secondItem="2qg-Gy-dbx" secondAttribute="trailing" id="O1z-3k-QD4"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="2qg-Gy-dbx" secondAttribute="bottom" id="Wg9-Oo-FoB"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="xM7-us-HfU" secondAttribute="bottom" constant="8" id="dtO-Ug-TtJ"/>
+                            <constraint firstItem="xM7-us-HfU" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="fmf-vb-1uq"/>
+                            <constraint firstItem="xM7-us-HfU" firstAttribute="trailing" secondItem="TpU-gO-2f1" secondAttribute="trailingMargin" id="gPV-8o-KT4"/>
+                            <constraint firstItem="2qg-Gy-dbx" firstAttribute="top" secondItem="TpU-gO-2f1" secondAttribute="top" id="rxE-4V-SZb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="2qg-Gy-dbx" id="GHC-cM-b1w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="433"/>
+        </scene>
+    </scenes>
+</document>

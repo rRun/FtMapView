@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FtMapView_Example' do
+  pod 'FtMapView', :path => '../'
+
+  target 'FtMapView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
