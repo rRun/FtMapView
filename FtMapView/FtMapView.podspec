@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'FtMapView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of FtMapView.'
+  s.summary          = 'FtMapView,locator 定位和地图定位的图标'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    FtMapView,locator 定位和地图定位的图标，请参考demo
                        DESC
 
   s.homepage         = 'https://github.com/<GITHUB_USERNAME>/FtMapView'
@@ -36,7 +36,7 @@ TODO: Add long description of the pod here.
   #   'FtMapView' => ['FtMapView/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+    s.public_header_files = 'Pod/Classes/**/*.h'
     s.frameworks = 'UIKit', 'MapKit', 'CoreLocation'
   # s.dependency 'AFNetworking', '~> 2.3'
     s.dependency 'Masonry', '~> 1.0.1'
