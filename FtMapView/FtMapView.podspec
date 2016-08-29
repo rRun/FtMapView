@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FtMapView'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'FtMapView,locator 定位和地图定位的图标'
 
 # This description is used to generate tags and improve search results.

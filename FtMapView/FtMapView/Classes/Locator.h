@@ -20,6 +20,7 @@
 @property (nonatomic,assign)CLLocationCoordinate2D lastLoction;//上次定位成功的坐标
 @property (nonatomic,assign) BOOL isStartLocation;//是否在定位中
 
+@property (nonatomic,strong)NSString *NoAuthorizationTip;
 +(Locator *)defaultLocator;
 
 //控制定位

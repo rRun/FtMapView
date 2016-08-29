@@ -62,7 +62,7 @@ static Locator *defaultLocator = nil;
     BOOL enable = [CLLocationManager locationServicesEnabled];
     
     if (!enable) {
-        [[[UIAlertView alloc]initWithTitle:@"Tip" message:@"请打开定位权限" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil] show];
+        [[[UIAlertView alloc]initWithTitle:nil message:self.NoAuthorizationTip delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
         
         return;
     }
@@ -83,6 +83,7 @@ static Locator *defaultLocator = nil;
                 [self.locationManager requestWhenInUseAuthorization];  //调用了这句,就会弹出允许框了
             }
             
+            return;
         }
             break;
         case kCLAuthorizationStatusRestricted:{
@@ -110,7 +111,7 @@ static Locator *defaultLocator = nil;
         }
         
     }else{
-        [[[UIAlertView alloc]initWithTitle:@"Tip" message:@"定位权限已关闭" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil] show];
+        [[[UIAlertView alloc]initWithTitle:nil message:self.NoAuthorizationTip delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
     }
 }
 
@@ -347,5 +348,11 @@ static Locator *defaultLocator = nil;
         }
     }
     return _locationManager;
+}
+-(NSString *)NoAuthorizationTip{
+    if (!_NoAuthorizationTip) {
+        _NoAuthorizationTip = @"需要您允许定位授权。\n请启用定位-设置/隐私/定位";
+    }
+    return _NoAuthorizationTip;
 }
 @end
