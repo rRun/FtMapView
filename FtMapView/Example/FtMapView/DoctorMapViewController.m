@@ -241,6 +241,7 @@
     [self openOrHideInfoView:YES];
 }
 -(void)resetView{
+    
 }
 #pragma mark - Locate
 
@@ -256,8 +257,6 @@
     self.currentRegion = currentRegion;
     
 }
-
-
 
 #pragma mark - Abstract methods
 
@@ -304,7 +303,6 @@
     }
     return pinView;
 }
-
 
 - (void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray<MKAnnotationView *> *)views{
     
@@ -357,8 +355,6 @@
 //用户定位
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
     
-  
-    
     [[Locator defaultLocator]getAddressByLocationCoordinate:userLocation.location.coordinate Success:^(CLPlacemark *placeInfo) {
         self.currentPlaceInfo = placeInfo;
     } Error:^(NSError *error) {
@@ -368,6 +364,7 @@
 }
 
 #pragma mark - Getter and Setter
+
 -(void)setCurrentPlaceInfo:(CLPlacemark *)currentPlaceInfo{
     MKUserLocation *userLocation = self.mapView.userLocation;
     if (!currentPlaceInfo) {
@@ -380,5 +377,6 @@
     
     _currentPlaceInfo = currentPlaceInfo;
 }
+
 @end
 

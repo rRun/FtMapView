@@ -14,8 +14,7 @@
 @interface DoctorOfficeAnnotation : NSObject<MKAnnotation>
 
 @property (nonatomic) CLLocationCoordinate2D coordinate;
-@property (nonatomic) NSString *title;
-@property (nonatomic) NSString *subtitle;
+
 
 - (id)initWithDictionary:(NSDictionary *)dictionary;
 

@@ -110,7 +110,7 @@ static Locator *defaultLocator = nil;
         }
         
     }else{
-        [[UIAlertView alloc]initWithTitle:@"Tip" message:@"定位权限已关闭" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+        [[[UIAlertView alloc]initWithTitle:@"Tip" message:@"定位权限已关闭" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil] show];
     }
 }
 

@@ -30,14 +30,15 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '7.0'
 
-  s.source_files = 'FtMapView/Classes/**/*'
+  s.source_files = 'FtMapView/FtMapView/Classes/**/*'
   
   # s.resource_bundles = {
   #   'FtMapView' => ['FtMapView/Assets/*.png']
   # }
 
-    s.public_header_files = 'FtMapView/Classes/**/*.h'
+    s.public_header_files = 'FtMapView/FtMapView/Classes/**/*.h'
     s.frameworks = 'UIKit', 'MapKit', 'CoreLocation'
   # s.dependency 'AFNetworking', '~> 2.3'
     s.dependency 'Masonry', '~> 1.0.1'
+
 end
